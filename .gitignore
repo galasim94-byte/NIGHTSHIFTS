@@ -1,0 +1,14 @@
+# Build output
+**/bin/
+**/obj/
+.vs/
+
+# Compiled files
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# User-specific IDE files
+*.user
+*.suo
