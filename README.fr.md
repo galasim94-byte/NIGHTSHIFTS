@@ -21,7 +21,7 @@ Windows peut limiter les tables gamma trop éloignées du réglage neutre. NIGHT
 
 ## Télécharger
 
-La dernière version Windows se trouve dans les [Releases](https://github.com/galasim94-byte/NIGHTSHIFTS/releases/latest). La version actuelle nécessite le **.NET 8 Desktop Runtime**.
+La dernière version Windows se trouve dans les [Releases](https://github.com/galasim94-byte/NIGHTSHIFTS/releases/tag/v0.1.0-preview.1). La version actuelle nécessite le **.NET 8 Desktop Runtime**.
 
 ## Compiler les sources
 
@@ -45,3 +45,4 @@ Les signalements de bugs et suggestions sont bienvenus dans [GitHub Issues](http
 ## Licence
 
 Aucune licence n’a encore été choisie. Contacte le propriétaire du dépôt avant de réutiliser ou redistribuer le code.
+

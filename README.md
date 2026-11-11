@@ -21,7 +21,7 @@ Windows may limit gamma tables that are far from neutral. NIGHTSHIFT shows the r
 
 ## Download
 
-Get the latest Windows build from [Releases](https://github.com/galasim94-byte/NIGHTSHIFTS/releases/latest). The current build requires the **.NET 8 Desktop Runtime**.
+Get the latest Windows build from [Releases](https://github.com/galasim94-byte/NIGHTSHIFTS/releases/tag/v0.1.0-preview.1). The current build requires the **.NET 8 Desktop Runtime**.
 
 ## Build from source
 
@@ -45,3 +45,4 @@ Bug reports and suggestions are welcome through [GitHub Issues](https://github.c
 ## License
 
 A license has not yet been selected. See the repository owner before reusing or redistributing the code.
+
