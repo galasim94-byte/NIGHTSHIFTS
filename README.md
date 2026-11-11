@@ -1,80 +1,47 @@
-# 🌙 NIGHTSHIFTS
+# NIGHTSHIFT
 
-### A warmer screen. A calmer night.
+A warmer screen. A calmer night.
 
-**NIGHTSHIFTS** is a lightweight Windows application designed to bring the warm-screen experience commonly found in Linux desktop environments to Windows.
+NIGHTSHIFT is a small Windows 11 desktop app for adjusting screen color temperature. It applies per-display gamma ramps and reports the temperature and intensity Windows actually allows, which can differ from the requested setting on some displays.
 
-By shifting your display towards warmer, orange tones, NIGHTSHIFTS offers an alternative way to configure your screen for evening use.
+[English](README.md) · [Français](README.fr.md)
 
----
+![NIGHTSHIFT running on a Windows desktop](assets/preview.png)
 
-## ✨ Features
+## Features
 
-- 🌅 **Warm Screen Colors** — Shift your display towards warmer orange tones.
-- 🌙 **Night Display Experience** — Bring a Linux-inspired night-light experience to Windows.
-- 🪶 **Lightweight Application** — Designed to be a small desktop utility.
-- 🖥️ **Windows Support** — Built for the Windows desktop environment.
+- Color temperature control from 1,900 K to 6,500 K, with Day, Balanced, Evening, and Night presets.
+- Per-display color filtering through Windows gamma ramps.
+- An on-screen estimate of the effective color temperature and applied intensity.
+- Hardware brightness control where the monitor supports it.
+- Restores the previous display ramp when the app closes.
+- Local desktop app; no account or network connection is required.
 
-*Features may evolve as the project develops.*
+Windows may limit gamma tables that are far from neutral. NIGHTSHIFT shows the resulting intensity rather than pretending every requested value can be applied in full.
 
-## 📸 Preview
+## Download
 
-<!-- Add screenshots of NIGHTSHIFTS here -->
+Get the latest Windows build from [Releases](https://github.com/galasim94-byte/NIGHTSHIFTS/releases/latest). The current build requires the **.NET 8 Desktop Runtime**.
 
-![NIGHTSHIFTS Preview](assets/preview.png)
+## Build from source
 
-## 🚀 Installation
+Requirements: Windows 11 and the .NET 8 SDK.
 
-### Option 1 — Download
+```powershell
+git clone https://github.com/galasim94-byte/NIGHTSHIFTS.git
+cd NIGHTSHIFTS
+dotnet build NIGHTSHIFT.sln -c Release
+dotnet run --project src/UI/Nightshift.UI.csproj -c Release
+```
 
-1. Go to the [Releases](../../releases) section.
-2. Download the latest version of NIGHTSHIFTS.
-3. Extract the downloaded archive if necessary.
-4. Run `Nightshift.exe`.
+## Project status
 
-**Important:** If the release includes `Nightshift.dll`, keep it in the same directory as `Nightshift.exe`.
+The color filter, display engine, and WPF interface are implemented. Scheduling, saved profiles, and a persistent tray guardian are planned work. See [`documentation/`](documentation/) for design notes and measured display behavior.
 
-### Option 2 — Run from source
+## Contributing
 
-Source-code installation instructions will be added once the development environment and build process are documented.
+Bug reports and suggestions are welcome through [GitHub Issues](https://github.com/galasim94-byte/NIGHTSHIFTS/issues). Please include your Windows version, display type, and the requested and effective temperature when reporting a display-specific issue.
 
-## 💻 Compatibility
+## License
 
-| Requirement | Support |
-|---|---|
-| Operating system | Windows |
-| Windows 11 | Target platform |
-| Linux | Not supported |
-| macOS | Not supported |
-
-## 🛠️ Project
-
-NIGHTSHIFTS aims to provide a simple and accessible night display utility for Windows users who appreciate the warm-screen functionality available in Linux environments.
-
-## 🗺️ Roadmap
-
-- [x] Initial Windows executable
-- [ ] Publish source code
-- [ ] Add application screenshots
-- [ ] Improve installation experience
-- [ ] Add customizable color temperature
-- [ ] Explore automatic night scheduling
-- [ ] Add startup and system-tray options
-
-## 🤝 Contributing
-
-Contributions, suggestions and bug reports are welcome!
-
-If you find a bug or have an idea for a new feature, please open an issue.
-
-## 📄 License
-
-A license will be specified when the source code is published.
-
----
-
-<p align="center">
-  **NIGHTSHIFTS**
-  <br>
-  A warmer screen. A calmer night.
-</p>
+A license has not yet been selected. See the repository owner before reusing or redistributing the code.
